@@ -59,7 +59,7 @@ def registration(request):
     password = data["password"]
     first_name = data["firstName"]
     last_name = data["lastName"]
-    email = data["email"]    
+    email = data["email"]
     username_exist = False
     try:
         # Check if user already exists
@@ -152,7 +152,7 @@ def get_dealer_details(request, dealer_id):
 
 def add_review(request):
     if not request.user.is_anonymous:
-        data = json.loads(request.body)        
+        data = json.loads(request.body)
         try:
             # Store response but unused - consider removing if not needed
             _ = post_review(data)
