@@ -1,4 +1,3 @@
-
 # Register your models here.
 
 # CarModelInline class
